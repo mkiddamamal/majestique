@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+body {
+    font-family: Arial, sans-serif; 
+
+}
+.logo a {
+    color: black; 
+    padding: 10px 20px; 
+    border: 1px solid black; 
+    position: absolute; 
+    top: 10px;
+    left: 10px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-weight: 900; 
+    text-shadow: 2px 2px 5px white; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+
+.logo a:hover {
+    background-color: #d4af37;  
+    color: white; 
+    transform: scale(1.05); 
+}
+
+
+.logo a:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.8); 
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: auto;
+    padding-top: 50px;  
+}
+
+.content-section {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px; 
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 30px;  
+}
+
+.image-section img {
+    width: auto; 
+    height:400px;
+    object-fit: cover; 
+    background-color: white; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 5px solid goldenrod;
+}
+.image-section img:hover{
+    transform: scale(1.03);
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    text-decoration: overline;
+    font-size: 14px; 
+    color: #333;
+    margin-bottom: 15px;  
+}
+
+.content-section .content h3 {
+    margin-top: 15px;
+    color: #5d5d5d;
+    font-size: 18px;  
+}
+
+.content-section .content p {
+    margin-top: 10px;
+    font-size: 17px;  
+    line-height: 1.5;
+    color: #444;
+}
+
+.content-section .content .button {
+    margin-top: 20px;
+}
+
+.content-section .content .button a {
+    background-color: #3d3d3d;
+    padding: 6px 15px;  
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;  
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  
+}
+
+.content-section .content .button a:hover {
+    background-color: goldenrod;
+    color: #fff;
+}
+
+.content-section .social {
+    margin-top: 30px;
+}
+
+.content-section .social i {
+    color: goldenrod;
+    font-size: 25px; 
+    padding: 0 10px;
+}
+

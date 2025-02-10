@@ -1,0 +1,114 @@
+.logo a {
+    color: black; 
+    padding: 10px 20px; 
+    border: 1px solid black; 
+    position: absolute; 
+    top: 10px;
+    left: 10px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-weight: 900; 
+    text-shadow: 2px 2px 5px white; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+
+.logo a:hover {
+    background-color: #d4af37;  
+    color: white; 
+    transform: scale(1.05); 
+}
+
+
+.logo a:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.8); 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: whitesmoke; 
+    color: black; 
+   
+}
+
+.description-section {
+    color: black; 
+    padding: 50px 0;
+    
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.image-left, .image-right {
+    flex: 1;
+    padding: 20px;
+    margin-top: 70px;
+    animation: grow-shrink 5s infinite; 
+}
+
+.image-left img, .image-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@keyframes grow-shrink {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.2); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.description {
+    flex: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.description h2 {
+    font-size: 28px;
+    color: #d4af37; /* Or */
+    margin-bottom: 20px;
+    text-decoration: overline;
+    margin-top: -100px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black; /* Texte blanc */
+    text-align: center; /* Centre le texte */
+    margin: 180px auto 0; /* Optionnel: Ajoute une marge automatique pour le centrer si nécessaire */
+    max-width: 800px;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-left, .image-right {
+        padding: 10px;
+    }
+}
