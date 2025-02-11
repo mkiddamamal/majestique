@@ -6,7 +6,7 @@
     font-family:century;
 }
 header{
-    background-image:url(siteweb image.jpeg);
+    background-image:url("siteweb image.jpeg");
     height: 100vh;
     background-size:cover;
     background-position: center;
